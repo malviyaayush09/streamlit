@@ -66,7 +66,7 @@ def parse_page_range(page_range, total_pages):
 
 def main():
     st.set_page_config(page_title="Chat with your PDF using Llama2 & Llama Index", page_icon="🦙")
-    st.header('Chat with your PDF using Llama2 model & Llama Index')
+    st.header('e2ChatDocs')
 
     if "conversation" not in st.session_state:
         st.session_state.conversation = None
