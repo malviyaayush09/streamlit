@@ -83,7 +83,7 @@ def main():
     GRADIENT_ACCESS_TOKEN = os.environ["GRADIENT_ACCESS_TOKEN"]
     GRADIENT_WORKSPACE_ID = os.environ["GRADIENT_WORKSPACE_ID"]
     loop = get_or_create_event_loop()
-    llm = GradientBaseModelLLM(base_model_slug="llama2-7b-chat", max_tokens=400)
+    llm = GradientBaseModelLLM(base_model_slug="llama3-8b-chat", max_tokens=400)
     embed_model = GradientEmbedding(
         gradient_access_token=GRADIENT_ACCESS_TOKEN,
         gradient_workspace_id=GRADIENT_WORKSPACE_ID,
